@@ -1,0 +1,5 @@
+C:\Users\cteds_28\source\repos\Alexandre-d7-avaliacao\Alexandre-d7-avaliacao\obj\Debug\net6.0-windows\Alexandre-d7-avaliacao.csproj.AssemblyReference.cache
+C:\Users\cteds_28\source\repos\Alexandre-d7-avaliacao\Alexandre-d7-avaliacao\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\cteds_28\source\repos\Alexandre-d7-avaliacao\Alexandre-d7-avaliacao\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\cteds_28\source\repos\Alexandre-d7-avaliacao\Alexandre-d7-avaliacao\obj\Debug\net6.0-windows\Alexandre-d7-avaliacao_MarkupCompile.cache
+C:\Users\cteds_28\source\repos\Alexandre-d7-avaliacao\Alexandre-d7-avaliacao\obj\Debug\net6.0-windows\Alexandre-d7-avaliacao_MarkupCompile.lref
