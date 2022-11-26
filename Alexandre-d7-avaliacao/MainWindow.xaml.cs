@@ -1,8 +1,9 @@
 ﻿using Alexandre_d7_avaliacao.Model;
-using Alexandre_d7_avaliacao.Context;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,32 +23,29 @@ namespace Alexandre_d7_avaliacao
     /// </summary>
     public partial class MainWindow : Window
     {
-        /// Interaction logic for MainWindow.xaml
-        /// </summary>
-        private readonly Context context;
-        User newUser= new();
 
+        private readonly Context context;
         public MainWindow(Context context)
         {
   
            this.context = context;
-            InitializeComponent();
-/*                GetProducts();
-                NewProductGrid.DataContext = newProduct;
-*/
+           InitializeComponent();
+
         }
+
+
 
         private void GetProducts()
         {
   
-/*                ProductDataGrid.ItemsSource = context.Products.ToList();
-*/
+/*                ProductDataGrid.ItemsSource = context.Products.ToList();*/
         }
 
         private void AddItem(object sender, RoutedEventArgs e)
         {
 
-/*                context.Products.Add(newProduct);
+/*                
+                context.Products.Add(newProduct);
                 context.SaveChanges();
 
                 GetProducts();
