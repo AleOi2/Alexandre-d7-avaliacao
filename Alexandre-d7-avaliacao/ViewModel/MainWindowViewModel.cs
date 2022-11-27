@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Alexandre_d7_avaliacao.Model;
+using Alexandre_d7_avaliacao.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -38,44 +40,32 @@ namespace Alexandre_d7_avaliacao.ViewModel
 
         public MainWindowViewModel()
         {
-            SubmitCommand = new RelayCommand(o => MainButtonClick());
+            SubmitCommand = new RelayCommand(o => MainButtonClick("SubmitCommand"));
         }
+
+        private readonly Context context;
+
+        public MainWindowViewModel(Context context)
+        {
+            SubmitCommand = new RelayCommand(o => MainButtonClick("SubmitCommand"));
+            this.context = context;
+        }
+
         private void MainButtonClick(object sender)
         {
-            MessageBox.Show(sender.ToString());
-         }
+            var retrivedUser= context.Users.Where(u => u.username == username && u.password == password).FirstOrDefault<User>();
+            if (retrivedUser?.username == username)
+            {
+                MessageBox.Show("Usuário autenticado");
+            } else
+            {
+                MessageBox.Show("Credenciais inválidas");
+            }
+
+        }
     }
 
-    public class RelayCommand : ICommand
-    {
-        private readonly Action<object> _execute;
-        private readonly Predicate<object> _canExecute;
 
-        public RelayCommand(Action<object> execute, Predicate<object> canExecute = null)
-        {
-            if (execute == null) throw new ArgumentNullException("execute");
-
-            _execute = execute;
-            _canExecute = canExecute;
-        }
-
-        public bool CanExecute(object parameter)
-        {
-            return _canExecute == null || _canExecute(parameter);
-        }
-
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
-
-        public void Execute(object parameter)
-        {
-            _execute(parameter ?? "<N/A>");
-        }
-
-    }
 }
 
 

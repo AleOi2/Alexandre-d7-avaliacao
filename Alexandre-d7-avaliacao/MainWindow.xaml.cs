@@ -1,4 +1,5 @@
 ﻿using Alexandre_d7_avaliacao.Model;
+using Alexandre_d7_avaliacao.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,29 +31,9 @@ namespace Alexandre_d7_avaliacao
   
            this.context = context;
            InitializeComponent();
+           DataContext = new MainWindowViewModel(context);
 
         }
 
-
-
-        private void GetProducts()
-        {
-  
-/*                ProductDataGrid.ItemsSource = context.Products.ToList();*/
-        }
-
-        private void AddItem(object sender, RoutedEventArgs e)
-        {
-
-/*                
-                context.Products.Add(newProduct);
-                context.SaveChanges();
-
-                GetProducts();
-
-                newProduct = new Product();
-                NewProductGrid.DataContext = newProduct;
-*/
-        }
     }
 }

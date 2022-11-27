@@ -4,24 +4,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Alexandre_d7_avaliacao"
+        xmlns:viewmodel="clr-namespace:Alexandre_d7_avaliacao.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainWindowViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="660" Width="480">
+    <!--<Window.Resources>
+        <viewmodel:MainWindowViewModel x:Key="vm"></viewmodel:MainWindowViewModel>
+    </Window.Resources>-->
     <StackPanel>
         <Canvas>
             <TextBlock Canvas.Left="60" Canvas.Top="145" FontFamily="Inter"  FontSize="16px" Text="Usuário" />
             <TextBox Name="user_input" Canvas.Left="60" Canvas.Top="180"
-                     TextWrapping="Wrap" Width="360" Height="60" 
-                     Text="{Binding Path=username}"
+                     TextWrapping="Wrap" Width="360" Height="60" Background="#D9D9D9"
+                     FontFamily="Inter"  FontSize="16px"
+                     Text="{Binding  Path=username, Mode=TwoWay}"
             />
             <TextBlock Canvas.Left="60" Canvas.Top="325" FontFamily="Inter"  FontSize="16px" Text="Senha" />
             <TextBox Name="pass_input" Canvas.Left="60"
                      Canvas.Top="360" TextWrapping="Wrap"
-                     Width="360" Height="60"
-                     Text="{Binding Path=password}"
+                     FontFamily="Inter"  FontSize="16px"
+                     Width="360" Height="60" Background="#D9D9D9"
+                     Text="{Binding  Path=password, Mode=TwoWay}"
             />
             <Button Width="240" Height="60"
                     Canvas.Left="120px" Canvas.Top="540"
-                    Content="Acessar" Command="{Binding SubmitCommand}" />
+                    Content="Acessar" Command="{Binding  Path=SubmitCommand}" />
         </Canvas>
     </StackPanel>
 

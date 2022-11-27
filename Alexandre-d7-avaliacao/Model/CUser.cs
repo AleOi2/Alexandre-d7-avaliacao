@@ -29,7 +29,7 @@ namespace Alexandre_d7_avaliacao.Model
                 new User
                 {
                     Id = Guid.NewGuid(),
-                    username = "admin@gmail.com",
+                    username = "admin@email.com",
                     password = "admin123",
                 },
             };

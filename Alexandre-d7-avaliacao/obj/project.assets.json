@@ -1183,23 +1183,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cteds_28\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\alexa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cteds_28\\source\\repos\\Alexandre-d7-avaliacao\\Alexandre-d7-avaliacao\\Alexandre-d7-avaliacao.csproj",
+      "projectUniqueName": "D:\\CTED\\avaliacao\\Alexandre-d7-avaliacao\\Alexandre-d7-avaliacao.csproj",
       "projectName": "Alexandre-d7-avaliacao",
-      "projectPath": "C:\\Users\\cteds_28\\source\\repos\\Alexandre-d7-avaliacao\\Alexandre-d7-avaliacao\\Alexandre-d7-avaliacao.csproj",
-      "packagesPath": "C:\\Users\\cteds_28\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cteds_28\\source\\repos\\Alexandre-d7-avaliacao\\Alexandre-d7-avaliacao\\obj\\",
+      "projectPath": "D:\\CTED\\avaliacao\\Alexandre-d7-avaliacao\\Alexandre-d7-avaliacao.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "D:\\CTED\\avaliacao\\Alexandre-d7-avaliacao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\cteds_28\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1254,7 +1256,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
